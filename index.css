@@ -1,0 +1,61 @@
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    position: relative;
+    animation-name: animacao4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 1;
+}
+
+@keyframes animacao4 {
+    from {left: 1px;}
+    to {left: 90%;
+        transform: rotate(50deg)}
+}
+
+#animation4 {
+    animation-timing-function: linear;
+}
+
+#animation5 {
+    animation-timing-function: ease;
+}
+
+#animation6 {
+    animation-timing-function: ease-in;
+}
+#animation7 {
+    animation-timing-function: ease-out;
+}
+#animation8 {
+    animation-timing-function: ease-in-out;
+}
+
+.container {
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+    border: solid red;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    border: solid black;
+    min-height: 80vh;
+    width: 50%;
+    background-color: blue;
+    z-index: 2;
+    position: fixed;
+}
